@@ -1,0 +1,422 @@
+.principal-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+.up-container {
+  width: 100%;
+  margin-bottom: 3px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
+
+.down-container {
+  background-color: #27292f;
+  margin-top: -2%;
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 20px;
+  flex: 1;
+}
+
+.colonne-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  width: 170px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #27292f;
+  z-index: 2;
+  position: absolute;
+  top: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bouton {
+  margin: 20px auto;
+  margin-top: 60%;
+  width: 180px;
+  height: 70px;
+  padding: 10px 18px 11px 19px;
+  border-radius: 50px;
+  border: solid 1px #fff;
+  background-color: #27292f;
+  color: #fff;
+  font-size: 18px;
+}
+
+.right-column {
+  display: grid;
+  width: 90%;
+  padding-top: 5%;
+  grid-template-rows: repeat(6, auto);
+}
+
+@media (max-width: 768px) {
+  .right-column {
+    padding-top: 10px;
+  }
+}
+
+.ligne1 {
+  justify-content: space-between;
+  display: flex;
+}
+
+.title {
+  width: 352px;
+  height: 40px;
+  margin: -50px 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.icon {
+  width: 24px;
+  height: 7px;
+  object-fit: contain;
+  color: #fff;
+  margin: 16px;
+}
+
+.ligne2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 8px 16px;
+}
+
+.icone-texte {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.icone-lien {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.icone-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icone-group > * {
+  color: #fff;
+}
+
+.ligne3 {
+  width: 80%;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.1px;
+  color: #fff;
+  margin: 8px 16px;
+}
+
+.ligne4 {
+  justify-content: space-between;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: #fff solid 1px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.tags-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 20%;
+  height: fit-content;
+  margin: 8px 0;
+}
+
+.tags-container img {
+  flex-grow: 0;
+  margin-bottom: -2%;
+}
+
+.right-elements {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 16px;
+}
+
+.right-btn {
+  width: 180px;
+  height: 70px;
+  padding: 10px 18px 11px 19px;
+  border-radius: 50px;
+  border: solid 1px #fff;
+  background-color: #27292f;
+  color: #fff;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.right-btn-1 {
+  width: 180px;
+  height: 70px;
+  padding: 10px 18px 11px 19px;
+  border-radius: 50px;
+  border: solid 1px #fff;
+  color: blue;
+  background-color: #fff;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.right-elements .hr {
+  vertical-align: middle;
+  line-height: normal;
+  margin-right: 16px;
+}
+
+.ligne5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 20px;
+}
+
+.l5-title {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.l5-title p {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+@media (max-width: 1048px) {
+  .title {
+    font-size: 24px;
+    margin: 8px 16px;
+  }
+
+  .ligne2,
+  .ligne3 {
+    font-size: 18px;
+    margin: 8px 16px;
+  }
+
+  .logo {
+    width: 120px;
+    top: -5%;
+  }
+
+  .bouton {
+    margin-top: 20%;
+    width: 80%;
+  }
+
+  .right-elements {
+    padding: 8px;
+  }
+
+  .right-btn,
+  .right-btn-1 {
+    width: 140px;
+    height: 50px;
+    padding: 8px 14px 9px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 980px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .ligne2,
+  .ligne3 {
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 120px;
+    top: 2%;
+  }
+
+  .bouton {
+    margin-top: 50%;
+    width: 80%;
+  }
+
+  .right-btn,
+  .right-btn-1 {
+    width: 120px;
+    height: 30px;
+    padding: 6px 10px 7px 11px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 780px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .ligne2,
+  .ligne3 {
+    font-size: 14px;
+  }
+
+  .down-container {
+    grid-template-columns: 1fr;
+  }
+
+  .colonne-logo {
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 120px;
+    top: -15%;
+  }
+
+  .bouton {
+    margin-top: 20%;
+    width: 50%;
+  }
+
+  .right-column {
+    grid-row: auto;
+    padding-top: 10px;
+  }
+
+  .right-elements {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .right-btn,
+  .right-btn-1 {
+    width: 100%;
+    height: 40px;
+    padding: 6px 10px 7px 11px;
+    font-size: 12px;
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 945px) {
+  .right-column {
+    grid-template-rows: auto auto auto;
+  }
+
+  .right-elements {
+    grid-row: 3;
+  }
+
+  .tags-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .bouton {
+    margin-top: 20%;
+    width: 60%;
+  }
+
+  .right-btn,
+  .right-btn-1 {
+    width: 100%;
+    height: 40px;
+    padding: 6px 10px 7px 11px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-column {
+    grid-template-rows: auto auto;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+    top: -7%;
+  }
+
+  .bouton {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .tags-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .right-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .right-btn,
+  .right-btn-1 {
+    width: 100%;
+    height: 40px;
+    padding: 6px 10px 7px 11px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo {
+    width: 100px;
+    height: auto;
+    top: -7%;
+  }
+}
+
+@media (max-width: 280px) {
+  .logo {
+    width: 80px;
+    height: auto;
+    top: -7%;
+  }
+}
